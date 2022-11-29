@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let o of userinfo.data">
+                                <td>{{o.id}}</td>
+                                <td>{{o.email}}</td>
+                                <td>{{o.first_name}}</td>
+                                <td>{{o.last_name}}</td>
+                              </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
